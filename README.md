@@ -1,5 +1,5 @@
 <h1 align="center">Landing page</h1>
-<h2 align="center">THP Day 29</h2>
+<h2 align="center">THP Day 34</h2>
 
 
 _"Quoi, c'était férié aujourd'hui ?"_
@@ -16,7 +16,7 @@ Plusieurs notions sont abordées :
 
 ### Heroku
 Le lien de l'application est le suivant : 
-https://the-hacking-project-lp.herokuapp.com/
+https://the-hacking-project-caen.herokuapp.com
 
 
 ### Avancement 
@@ -48,7 +48,7 @@ Nous aurions aimé faire plusieurs Landing Pages notamment au moins une dynamiqu
 ### Installation 
 Si vous voulez lancer cette merveille sur votre PC, il faudra faire : 
 ``` 
-git clone https://github.com/C83/THP_Day29.git
+git clone https://github.com/C83/THP_Day34.git
 cd LandingPageTHP
 bundle install --without production
 rails server 
