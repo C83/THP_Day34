@@ -1,5 +1,5 @@
 <h1 align="center">Landing page</h1>
-<h2 align="center">THP Day 29</h2>
+<h2 align="center">THP Day 34</h2>
 
 
 _"Quoi, c'était férié aujourd'hui ?"_
