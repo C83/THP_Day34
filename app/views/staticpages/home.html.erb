@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <%= stylesheet_link_tag params[:controller] %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag params[:controller] %>
+
     <meta name="description" content="Découvrez The Hacking Project, une nouvelle façon d'apprendre à coder et à vendre. Votre réussite dépendra d'une seule chose : votre  motivation ! Rejoignez les nombreux moussaillons pour la prochaine session ! " />
   </head>
 
@@ -102,16 +103,6 @@
     <div class="container">
     	<p><%= image_tag 'hackerman.png', width: 400 %></p></br></br></br>
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
     <%= render "layouts/footer" %>
 
