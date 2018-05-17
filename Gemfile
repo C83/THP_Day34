@@ -15,6 +15,10 @@ gem 'turbolinks'
 gem 'jbuilder'
 gem 'bundler'
 gem 'dotenv-rails'
+gem 'therubyracer'
+gem 'less-rails-bootstrap'
+gem "font-awesome-rails"
+gem 'ionicons-rails', '~> 2.0'
 
 group :development, :test do
   gem 'sqlite3'

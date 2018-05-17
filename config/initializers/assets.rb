@@ -12,3 +12,11 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+Rails.application.config.assets.precompile += %w(landingpages.css)
+Rails.application.config.assets.precompile += %w(staticpages.css)
+Rails.application.config.assets.precompile += %w(landingpages.js)
+Rails.application.config.assets.precompile += %w(boomerang.css)
+Rails.application.config.assets.precompile += %w(animate.css)
+Rails.application.config.assets.precompile += %w(hamburgers.css)
+Rails.application.config.assets.precompile += %w(swiper.css)
+Rails.application.config.assets.precompile += %w(swiper.js)

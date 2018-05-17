@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.gif">
+    <title>The Hacking Project - Formation développement web et vente </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-    <title>Cover Template for Bootstrap</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Risque de mal fonctionner si plusieurs pages, à causer de turbo-links -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118976327-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+      gtag('config', 'UA-118976327-1');
+    </script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <meta property="og:url" content="https://the-hacking-project-lp.herokuapp.com/" />
+    <meta property="og:type" content="sales" />
+    <meta property="og:title" content="Formation développement web et vente - The Hacking Project" />
+    <meta property="og:description" content="Découvrez The Hacking Project, une nouvelle façon d'apprendre à coder et à vendre. Votre réussite dépendra d'une seule chose : votre  motivation ! Rejoignez les nombreux moussaillons pour la prochaine session ! " />
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <%= stylesheet_link_tag params[:controller] %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="description" content="Découvrez The Hacking Project, une nouvelle façon d'apprendre à coder et à vendre. Votre réussite dépendra d'une seule chose : votre  motivation ! Rejoignez les nombreux moussaillons pour la prochaine session ! " />
   </head>
 
   <body>
-
+    <%= render "layouts/header" %>
+    <div class="container">
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>">
+            <%= value %>
+          </div>
+        <% end %>
+    </div>
+    
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -107,5 +112,8 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <%= render "layouts/footer" %>
+
   </body>
 </html>
