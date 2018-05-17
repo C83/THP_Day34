@@ -308,6 +308,7 @@ DEPENDENCIES
   simplecov
   spring
   spring-watcher-listen
+  sprockets
   sqlite3
   therubyracer
   turbolinks
