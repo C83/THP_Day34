@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Hacking Project - Formation développement web et vente </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Risque de mal fonctionner si plusieurs pages, à causer de turbo-links -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118976327-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-118976327-1');
+    </script>
+
+    <meta property="og:url" content="https://the-hacking-project-lp.herokuapp.com/" />
+    <meta property="og:type" content="sales" />
+    <meta property="og:title" content="Formation développement web et vente - The Hacking Project" />
+    <meta property="og:description" content="Découvrez The Hacking Project, une nouvelle façon d'apprendre à coder et à vendre. Votre réussite dépendra d'une seule chose : votre  motivation ! Rejoignez les nombreux moussaillons pour la prochaine session ! " />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="description" content="Découvrez The Hacking Project, une nouvelle façon d'apprendre à coder et à vendre. Votre réussite dépendra d'une seule chose : votre  motivation ! Rejoignez les nombreux moussaillons pour la prochaine session ! " />
+  </head>
+
+  <body>
+    <%= render "layouts/header" %>
+    <div class="container">
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>">
+            <%= value %>
+          </div>
+        <% end %>
+    </div>
+    
+    <%= yield %>
+
+    <%= render "layouts/footer" %>
+
+  </body>
+</html>
