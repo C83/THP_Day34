@@ -17,5 +17,5 @@ journalist =  ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau
 
 journalist.map { |user|
 
-client.update(" Hello, I'm student from The Hacking Projet the free training that teaches you to code in 3 months, join us, it's here: https://the-hacking-project-lp.herokuapp.com/ " + user.to_s)
+client.update("Bonjour, nous sommes des étudiants de The Hacking Projet, une formation gratuite pour aprendre à coder en 3 mois, nous vous invitons à visiter cette page pour plus de détails : https://the-hacking-project-lp.herokuapp.com/ " + user.to_s)
 }
