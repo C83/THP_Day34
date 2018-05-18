@@ -21,12 +21,8 @@ et plus réccement :
 ### Heroku
 Le lien de l'application est le suivant : 
 https://the-hacking-project-caen.herokuapp.com
+Cependant, seul la première landing page y est accessible. 
 
-#### Au sein de l'app tu as 3 LP's à ces adresses : 
-
-	 * https://the-hacking-project-caen.herokuapp.com/journaliste
-	 * https://the-hacking-project-caen.herokuapp.com/pro
-	 * https://the-hacking-project-caen.herokuapp.com
 
 ### Avancement 
 
@@ -40,7 +36,7 @@ https://the-hacking-project-caen.herokuapp.com
 
 Si tu veux voir les tweets envoyés, clique directement [ici](https://twitter.com/Itsme_Imadev).
 
-Malheureusement nous à 2 nous n'avons pas réussit à réaliser la totalité du travail, nous n'avons pas mis en place d'outil de tracking et nous avons eu des soucis avec heroku, seule la LP https://the-hacking-project-caen.herokuapp.com est visible sur heroku, les deux autres fonctionnent très bien mais en locale :/ Merci de ta compréhension cher correcteur 
+Malheureusement nous à 2 nous n'avons pas réussit à réaliser la totalité du travail, nous avons mis en place d'outil de tracking que sur la première landing page. Nous avons eu des soucis avec heroku, seule la LP https://the-hacking-project-caen.herokuapp.com est visible sur heroku, les deux autres fonctionnent très bien mais en locale :/ Merci de ta compréhension cher correcteur 
 
 ### Choix
 
@@ -65,9 +61,9 @@ ainsi qu'un petit ```bundle install --without production``` des familles
 ensuite lance un ```rails server```
 et navigue sur les 3 landing pages respectives, à savoir :
 
-	 * https://the-hacking-project-caen.herokuapp.com/journaliste
-	 * https://the-hacking-project-caen.herokuapp.com/pro
-	 * https://the-hacking-project-caen.herokuapp.com
+	 * localhost:3000/journaliste
+	 * localhost:3000/pro
+	 * localhost:3000
 
 <p align="center">Maintenant qu'on a tout donné, dodo !</p>
 
