@@ -69,6 +69,12 @@ et navigue sur les 3 landing pages respectives, à savoir :
 	 * https://the-hacking-project-caen.herokuapp.com/pro
 	 * https://the-hacking-project-caen.herokuapp.com
 
+<p align="center">Maintenant qu'on a tout donné, dodo !</p>
+
+<p align="center">
+  <img src="dodo.gif"/>
+</p>
+
 ### Team
 
 <p align="center">Cyril && Pacôme</p>
