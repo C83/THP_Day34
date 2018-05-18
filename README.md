@@ -64,6 +64,7 @@ Si vous voulez lancer cette merveille sur votre PC, il faudra faire un :
 ainsi qu'un petit ```bundle install --without production``` des familles
 ensuite lance un ```rails server```
 et navigue sur les 3 landing pages respectives, à savoir :
+
 	 * https://the-hacking-project-caen.herokuapp.com/journaliste
 	 * https://the-hacking-project-caen.herokuapp.com/pro
 	 * https://the-hacking-project-caen.herokuapp.com
